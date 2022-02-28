@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./estilos.css" rel="stylesheet">
+    <title>NW</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="p-3 mb-3 border-bottom">
+        <div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img class="logo" src="./img/NW.png"/>
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 link-dark">Inicio</a></li>
+              <li><a href="precios.html" class="nav-link px-2 link-dark">Precios</a></li>
+              <li><a href="#" class="nav-link px-2 link-secondary">FAQ</a></li>
+              <li><a href="soporte.html" class="nav-link px-2 link-dark">Soporte</a></li>
+              
+            </ul>
+    
+            <div class="col-md-3 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Inicio de sesión</button>
+                <button type="button" class="btn btn-primary">Registrarse</button>
+              </div>
+          </div>
+        </div>
+      </header>
+      
+    <!-- Preguntas frecuentes-->
+    <div class="container">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal">Preguntas frecuentes</h1>
+        </div>
+        
+        <div class="my-3 p-3 bg-body rounded shadow-sm">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <a class="" data-bs-toggle="collapse" href="#faq1" role="button" aria-expanded="true" aria-controls="faq1">
+                            ¿El plan gratis tiene periodo de prueba?
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse" id="faq1">
+                    <div class="card card-body">
+                        No, el plan gratis puede usarse tanto como se necesite siempre y cuando no exceda de las capacidades prestadas, de ser excedidas, se detendrá el servicio hasta que el cliente cambie al plan que satisfaga sus necesidades o reduzca los recursos que usa en la plataforma.
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <a class="" data-bs-toggle="collapse" href="#faq2" role="button" aria-expanded="false" aria-controls="faq2">
+                          ¿Cuál es el periodo de respuesta para el soporte?
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse" id="faq2">
+                    <div class="card card-body">
+                      Para los usuarios del plan gratis el periodo suele ser de 24 a 72 horas<br/>
+                      Para los usuarios del plan estandar el periodo es de 24 a 48 horas<br/>
+                      Para los usuarios del plan profesional el periodo es de 0 a 24 horas
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <a class="" data-bs-toggle="collapse" href="#faq3" role="button" aria-expanded="false" aria-controls="faq3">
+                          ¿Cómo puedo acceder al sistema?
+                        </a>
+                    </div>
+                </div>
+                <div class="collapse" id="faq3">
+                    <div class="card card-body">
+                      Puede acceder desde la página web o desde la aplicación móvil disponible en la playstore y la appstore.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER-->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <span class="text-muted">© 2022 NW</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="scrips/script.js"></script>
+</body>
+</html>
