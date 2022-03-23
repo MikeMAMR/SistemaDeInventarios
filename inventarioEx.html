@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="./assets/css/bootstrap.css" rel="stylesheet">
+    <link href="./estilos.css" rel="stylesheet">
+    <title>NW</title>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="p-3 mb-3 border-bottom">
+        <div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img class="logo" src="./img/NW.png"/>
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+              <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 link-dark">Inicio</a></li>
+              <li><a href="precios.html" class="nav-link px-2 link-dark">Precios</a></li>
+              <li><a href="faq.html" class="nav-link px-2 link-dark">FAQ</a></li>
+              <li><a href="soporte.html" class="nav-link px-2 link-dark">Soporte</a></li>
+              <li><a href="#" class="nav-link px-2 link-secondary">Inventarios</a></li>
+              <li><a href="movInventario.html" class="nav-link px-2 link-dark">Movimientos</a></li>
+              
+              
+            </ul>
+    
+            <div class="col-md-4 text-end">
+                <button type="button" class="btn btn-outline-primary me-2">Inicio de sesión</button>
+                <button type="button" class="btn btn-primary">Registrarse</button>
+              </div>
+          </div>
+        </div>
+      </header>
+      <div class="container">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle col-12 col-lg-6 col-md-12" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Almacenes
+            </button>
+            <ul class="dropdown-menu col-12 col-lg-6 col-md-12" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Almacen 1</a></li>
+              <li><a class="dropdown-item" href="#">Almacen 2</a></li>
+              <li><a class="dropdown-item" href="#">Almacen 3</a></li>
+              <li><a class="dropdown-item" href="#">Almacen 4</a></li>
+              <li><a class="dropdown-item" href="#">Almacen 5</a></li>
+            </ul>
+          </div>
+        <div>
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Clave</th>
+                    <th scope="col">Producto</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Existencia</th>
+                    <th scope="col">Nivel de reorden</th>
+                    <th scope="col"></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Chai</td>
+                    <td>Beverages</td>
+                    <td>39</td>
+                    <td>20</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Chang</td>
+                    <td>Beverages</td>
+                    <td>17</td>
+                    <td>10</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr>
+                    <td>24</td>
+                    <td>Guarana Fantastica</td>
+                    <td>Beverages</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr class="table-danger">
+                    <td>16</td>
+                    <td>Pavlova</td>
+                    <td>Confections</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr >
+                    <td>19</td>
+                    <td>Teatime Chocolate Biscuits</td>
+                    <td>Confections</td>
+                    <td>25</td>
+                    <td>15</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr >
+                    <td>59</td>
+                    <td>Raclette Courdavault</td>
+                    <td>Dairy Products</td>
+                    <td>79</td>
+                    <td>50</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr class="table-danger">
+                    <td>42</td>
+                    <td>Singaporean Hokkien Fried Mee</td>
+                    <td>Grains/Cereals</td>
+                    <td>26</td>
+                    <td>30</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr >
+                    <td>56</td>
+                    <td>Gnocchi di nonna Alice</td>
+                    <td>Grains/Cereals</td>
+                    <td>21</td>
+                    <td>20</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr >
+                    <td>9</td>
+                    <td>Mishi Kobe Niku</td>
+                    <td>Meat/Poultry</td>
+                    <td>29</td>
+                    <td>20</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                    
+                  </tr>
+                  <tr >
+                    <td>17</td>
+                    <td>Alice Mutton</td>
+                    <td>Meat/Poultry</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr >
+                    <td>14</td>
+                    <td>Tofu</td>
+                    <td>Produce</td>
+                    <td>35</td>
+                    <td>10</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr >
+                    <td>10</td>
+                    <td>Ikura</td>
+                    <td>Seafood</td>
+                    <td>31</td>
+                    <td>11</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr >
+                    <td>18</td>
+                    <td>Carnarvon Tigers</td>
+                    <td>Seafood</td>
+                    <td>42</td>
+                    <td>11</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr class="table-danger">
+                    <td>30</td>
+                    <td>Nord-Ost Matjeshering</td>
+                    <td>Seafood</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr class="table-danger">
+                    <td>31</td>
+                    <td>Inlagd Sill</td>
+                    <td>Seafood</td>
+                    <td>112</td>
+                    <td>150</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  <tr class="table-danger">
+                    <td>46</td>
+                    <td>Spegesild</td>
+                    <td>Seafood</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Ver detalle</button></td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+        </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Producto X</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Existencia del producto en: <br>
+            Almacen 1: 50 unidades <br>
+            Almacen 2: 10 unidades <br>
+            Almacen 3: 20 unidades <br>
+            Almacen 4: 10 unidades <br>
+            Almacen 5: 0 unidades 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+      <script src="scrips/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
