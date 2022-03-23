@@ -1,3 +1,11 @@
 .logo{
     width: 50px;
 }
+
+.btn:hover{
+    color: white;
+}
+
+.btn-primary{
+    color: white;
+}
